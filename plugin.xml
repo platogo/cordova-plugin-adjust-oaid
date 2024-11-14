@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-adjust-oaid" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AdjustOAID</name>
+    <js-module name="AdjustOAID" src="www/AdjustOAID.js">
+        <clobbers target="AdjustOaid" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="AdjustOAID">
+                <param name="android-package" value="com.platogo.adjust.oaid.AdjustOAID" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/AdjustOAID.java" target-dir="src/com/platogo/adjust/oaid" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>

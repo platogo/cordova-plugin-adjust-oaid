@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-adjust-oaid",
+  "version": "0.0.1",
+  "description": "cordova plugin to implement adjust-oaid",
+  "cordova": {
+    "id": "cordova-plugin-adjust-oaid",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Majeed Suleiman <majeed@platogo.com>",
+  "license": "ISC"
+}

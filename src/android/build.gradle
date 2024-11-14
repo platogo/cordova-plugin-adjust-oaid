@@ -1,0 +1,14 @@
+allprojects {
+    repositories {
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+    mavenCentral()
+    }
+}
+
+dependencies {
+    implementation 'com.adjust.sdk:adjust-android:5.0.1'
+    implementation 'com.adjust.sdk:adjust-android-oaid:5.0.1'
+    implementation 'com.huawei.hms:ads-identifier:3.4.62.300'
+}
